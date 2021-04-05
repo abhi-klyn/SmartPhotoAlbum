@@ -12,7 +12,7 @@ Resources:
       Description: 'Lambda function for indexing photos'
       MemorySize: 128
       Timeout: 10
-      Role: 'arn:aws:iam::188433198555:role/master-role'
+      Role: 'arn:aws:iam::506950888313:role/alphaAccess'
       Environment:
         Variables:
           REGION: us-east-1
@@ -26,7 +26,7 @@ Resources:
       Description: 'Lambda function for searching photos'
       MemorySize: 128
       Timeout: 10
-      Role: 'arn:aws:iam::188433198555:role/master-role'
+      Role: 'arn:aws:iam::506950888313:role/alphaAccess'
       Environment:
         Variables:
           REGION: us-east-1
