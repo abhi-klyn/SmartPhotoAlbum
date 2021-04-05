@@ -1,4 +1,2 @@
 # SmartPhotoAlbum
 
-
-a
