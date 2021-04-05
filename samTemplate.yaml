@@ -19,7 +19,7 @@ Resources:
   SearchPhotos:
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: indexPhotos-Lambda
+      FunctionName: searchPhotos-Lambda
       Handler: lambda_function.lambda_handler
       Runtime: python3.8
       CodeUri: ./search-photos.zip
