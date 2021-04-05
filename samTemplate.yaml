@@ -23,7 +23,7 @@ Resources:
       Handler: lambda_function.lambda_handler
       Runtime: python3.8
       CodeUri: ./search-photos.zip
-      Description: 'Lambda function for searching photos'
+      Description: 'Lambda function fr searching photos'
       MemorySize: 128
       Timeout: 10
       Role: 'arn:aws:iam::506950888313:role/alphaAccess'
