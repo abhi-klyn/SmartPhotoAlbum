@@ -5,7 +5,7 @@ Resources:
   IndexPhotos:
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: index-photos-cicd
+      FunctionName: indexPhotos-Lambda
       Handler: lambda_function.lambda_handler
       Runtime: python3.8
       CodeUri: ./index-photos.zip
@@ -19,7 +19,7 @@ Resources:
   SearchPhotos:
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: search-photos-cicd
+      FunctionName: indexPhotos-Lambda
       Handler: lambda_function.lambda_handler
       Runtime: python3.8
       CodeUri: ./search-photos.zip
