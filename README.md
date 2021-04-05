@@ -1,1 +1,1 @@
-# SmartPhotoAlbum
+# SmartPhotoAlbums
