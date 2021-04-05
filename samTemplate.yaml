@@ -1,0 +1,33 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: CD Lambda
+Resources:
+  IndexPhotos:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: index-photos-cicd
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.8
+      CodeUri: ./index-photos.zip
+      Description: 'Lambda function for indexing photos'
+      MemorySize: 128
+      Timeout: 10
+      Role: 'arn:aws:iam::188433198555:role/master-role'
+      Environment:
+        Variables:
+          REGION: us-east-1
+  SearchPhotos:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: search-photos-cicd
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.8
+      CodeUri: ./search-photos.zip
+      Description: 'Lambda function for searching photos'
+      MemorySize: 128
+      Timeout: 10
+      Role: 'arn:aws:iam::188433198555:role/master-role'
+      Environment:
+        Variables:
+          REGION: us-east-1
+
